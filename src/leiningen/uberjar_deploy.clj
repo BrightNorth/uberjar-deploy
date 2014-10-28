@@ -1,12 +1,14 @@
 (ns leiningen.uberjar-deploy
-  (:require [leiningen.core.main :as main]
-            [leiningen.deploy :as deploy]
-            [leiningen.jar :as jar]
-            [leiningen.pom :as pom]))
+  (:require
+    [leiningen.core.main :as main :refer [info]]
+    [leiningen.deploy :as deploy :refer [deploy]]
+    [leiningen.jar :as jar :refer [get-jar-filename]]
+    [leiningen.pom :as pom :refer [snapshot?]]))
 
 (defn uberjar-deploy
   "Deploys an existing uberjar with lein deploy"
   [project & args]
+  (main/info "Preparing to deploy uberjar")
   (let [repository (if (pom/snapshot? project) "snapshots" "releases")
         group (:group project)
         name (:name project)

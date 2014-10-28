@@ -11,13 +11,13 @@ of the `project.clj`.
 
 ## Usage
 
-Put `[uberjar-deploy "1.0.0"]` into the `:plugins` vector of your
+Put `[uberjar-deploy "1.0.1"]` into the `:plugins` vector of your
 `:user` profile, or if you are on Leiningen 1.x do `lein plugin install
-uberjar-deploy 1.0.0`.
+uberjar-deploy 1.0.1`.
 
-Use this for project-level plugins:
+Use this for project-level plugins:`
 
-Put `[uberjar-deploy "1.0.0"]` into the `:plugins` vector of your project.clj.
+Put `[uberjar-deploy "1.0.1"]` into the `:plugins` vector of your project.clj.
 
 By aliasing the `jar` and `deploy` tasks to `uberjar` and `uberjar-deploy`, you can use the 
 [lein release](https://github.com/relaynetwork/lein-release) plugin to do all your version management and push your deployable uberjar 
