@@ -1,5 +1,7 @@
 # uberjar-deploy
 
+[![Clojars Project](https://clojars.org/brightnorth/uberjar-deploy/latest-version.svg)](https://clojars.org/brightnorth/uberjar-deploy)
+
 A Leiningen plugin to deploy uberjars, intended to be used in a `lein release` workflow.  Delegates to `lein deploy` under the hood. 
 
 ## Rationale
